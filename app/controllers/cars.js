@@ -131,7 +131,7 @@ exports.getCar = async (req, res) => {
   }
 };
 // Update a car by ID
-exports.update = async (req, res) => {
+exports.updateCar = async (req, res) => {
   try {
     const car = await Car.findByIdAndUpdate(
       req.params.id,
